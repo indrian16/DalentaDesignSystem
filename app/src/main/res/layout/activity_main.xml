@@ -12,18 +12,22 @@
         android:id="@+id/btn_small_primary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Primary"/>
+        android:text="Small Primary"
+        android:textSize="14sp"
+        />
 
     <tech.dalenta.component.SmallButtonSecondary
         android:id="@+id/btn_small_secondary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Secondary"/>
+        android:text="Small Secondary"
+        android:textSize="14sp"/>
 
     <tech.dalenta.component.SmallButtonOutlined
         android:id="@+id/btn_small_outlined"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Small Outlined"/>
+        android:text="Small Outlined"
+        android:textSize="14sp"/>
 
 </LinearLayout>

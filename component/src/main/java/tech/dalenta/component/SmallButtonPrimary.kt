@@ -2,6 +2,7 @@ package tech.dalenta.component
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.widget.FrameLayout
 import com.google.android.material.button.MaterialButton
 
@@ -20,6 +21,7 @@ class SmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
         button.apply {
             text = attributes.getString(R.styleable.Button_android_text) ?: "Button"
             layoutParams = params
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.Button_android_textSize, this.textSize))
         }
 
         attributes.recycle()
