@@ -7,8 +7,9 @@
     tools:context=".MainActivity">
 
     <tech.dalenta.component.Button
+        style="@style/TextAppearance.DalentaDesignSystem.Button"
         android:id="@+id/btn_test"
-        android:text="Hell component"
+        android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
