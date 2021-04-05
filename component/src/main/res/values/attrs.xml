@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="Button">
-        <attr name="android:layout_width" format="dimension">-1</attr>
-        <attr name="android:layout_height" format="dimension">-1</attr>
-        <attr name="android:text" format="string">Button</attr>
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
     </declare-styleable>
+
+    <declare-styleable name="SmallButtonPrimary">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmallButtonSecondary">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+    </declare-styleable>
+
+    <declare-styleable name="SmallButtonOutlined">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+    </declare-styleable>
+
 </resources>

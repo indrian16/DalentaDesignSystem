@@ -1,17 +1,25 @@
 package tech.dalenta.dalentadesignsystem
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import tech.dalenta.component.Button
+import androidx.appcompat.app.AppCompatActivity
+import tech.dalenta.component.SmallButtonOutlined
+import tech.dalenta.component.SmallButtonPrimary
+import tech.dalenta.component.SmallButtonSecondary
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        findViewById<Button>(R.id.btn_test).setOnClickListener {
-            Toast.makeText(it.context, "Hello Component", Toast.LENGTH_SHORT).show()
+        findViewById<SmallButtonPrimary>(R.id.btn_small_primary).setOnClickListener {
+            Toast.makeText(it.context, "SmallButtonPrimary", Toast.LENGTH_SHORT).show()
+        }
+        findViewById<SmallButtonSecondary>(R.id.btn_small_secondary).setOnClickListener {
+            Toast.makeText(it.context, "SmallButtonSecondary", Toast.LENGTH_SHORT).show()
+        }
+        findViewById<SmallButtonOutlined>(R.id.btn_small_outlined).setOnClickListener {
+            Toast.makeText(it.context, "SmallButtonOutlined", Toast.LENGTH_SHORT).show()
         }
     }
 }

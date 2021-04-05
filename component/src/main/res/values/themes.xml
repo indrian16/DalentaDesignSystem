@@ -82,7 +82,7 @@
     <style name="TextAppearance.DalentaDesignSystem.Button" parent="TextAppearance.MaterialComponents.Button">
         <item name="fontFamily">@font/work_sans</item>
         <item name="android:fontFamily">@font/work_sans</item>
-        <item name="android:textSize">15sp</item>
+        <item name="android:textSize">14sp</item>
         <item name="fontWeight">600</item>
         <item name="android:textStyle">bold</item>
     </style>
