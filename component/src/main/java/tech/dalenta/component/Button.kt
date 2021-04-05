@@ -14,6 +14,10 @@ class Button(context: Context, attrs: AttributeSet) : FrameLayout(context, attrs
         button = findViewById(R.id.button)
 
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.Button)
+        button.text = attributes.getString(R.styleable.Button_android_text)
+        button.width = attributes.getLayoutDimension(R.styleable.Button_android_layout_width, 0)
+        button.height = attributes.getLayoutDimension(R.styleable.Button_android_layout_height, 0)
+
         attributes.recycle()
     }
 
