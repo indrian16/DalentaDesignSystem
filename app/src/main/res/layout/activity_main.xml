@@ -97,9 +97,9 @@
         <tech.dalenta.component.TextField
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:textLabel="Test label"
+            app:textLabel="Edit Field Label"
             android:text="Test set text"
-            android:inputType="number"/>
+            android:inputType="number" />
 
         <View
             android:layout_width="wrap_content"
