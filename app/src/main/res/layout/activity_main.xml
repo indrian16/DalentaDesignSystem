@@ -46,12 +46,12 @@
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/layout_large_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/layout_small_button">
 
         <LinearLayout
-            android:id="@+id/layout_large_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -85,5 +85,35 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/layout_text_field"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_below="@id/layout_large_button">
+
+        <tech.dalenta.component.TextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:textLabel="Text Label"
+            android:hint="Test Hint"
+            android:text="Text Value"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <tech.dalenta.component.TextField
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

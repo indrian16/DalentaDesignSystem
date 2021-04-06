@@ -49,4 +49,11 @@
         <attr name="android:textSize"/>
     </declare-styleable>
 
+    <declare-styleable name="TextField">
+        <attr name="android:text"/>
+        <attr name="android:hint"/>
+        <attr name="android:inputType"/>
+        <attr name="textLabel" format="string"/>
+    </declare-styleable>
+
 </resources>
