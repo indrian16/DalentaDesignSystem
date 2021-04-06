@@ -28,4 +28,25 @@
         <attr name="android:textSize"/>
     </declare-styleable>
 
+    <declare-styleable name="LargeButtonPrimary">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="LargeButtonSecondary">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
+    <declare-styleable name="LargeButtonOutlined">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+    </declare-styleable>
+
 </resources>

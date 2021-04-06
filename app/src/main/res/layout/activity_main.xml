@@ -1,33 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="vertical"
-    android:layout_margin="16dp">
+    android:layout_margin="16dp"
+    android:orientation="vertical">
 
-    <tech.dalenta.component.SmallButtonPrimary
-        android:id="@+id/btn_small_primary"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/layout_small_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:id="@+id/btn_small_primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Primary"
+            />
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:id="@+id/btn_small_secondary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Secondary"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="wrap_content"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:id="@+id/btn_small_outlined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outlined"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Small Primary"
-        android:textSize="14sp"
-        />
+        android:layout_below="@id/layout_small_button">
 
-    <tech.dalenta.component.SmallButtonSecondary
-        android:id="@+id/btn_small_secondary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Small Secondary"
-        android:textSize="14sp"/>
+        <LinearLayout
+            android:id="@+id/layout_large_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <tech.dalenta.component.SmallButtonOutlined
-        android:id="@+id/btn_small_outlined"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Small Outlined"
-        android:textSize="14sp"/>
+            <tech.dalenta.component.LargeButtonPrimary
+                android:id="@+id/btn_large_primary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Primary"/>
 
-</LinearLayout>
+            <View
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <tech.dalenta.component.LargeButtonSecondary
+                android:id="@+id/btn_large_secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Secondary"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"/>
+
+            <tech.dalenta.component.LargeButtonOutlined
+                android:id="@+id/btn_large_outlined"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Outlined"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

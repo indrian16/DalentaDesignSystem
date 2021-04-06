@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.DalentaDesignSystem.DarkActionBar"
+    android:id="@+id/parent_view">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="54dp"
+        android:paddingRight="54dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textAppearance="@style/TextAppearance.DalentaDesignSystem.Button"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:cornerRadius="10dp"
+        app:strokeColor="@color/blue_3"
+        />
+
+</FrameLayout>
