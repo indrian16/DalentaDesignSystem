@@ -89,7 +89,7 @@
     <LinearLayout
         android:id="@+id/layout_text_field"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
         android:layout_below="@id/layout_large_button">
@@ -97,21 +97,17 @@
         <tech.dalenta.component.TextField
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:textLabel="Text Label"
-            android:hint="Test Hint"
-            android:text="Text Value"/>
+            app:textLabel="Test label"
+            android:text="Test set text"
+            android:inputType="number"/>
 
         <View
-            android:layout_width="8dp"
-            android:layout_height="wrap_content"/>
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
 
         <tech.dalenta.component.TextField
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <View
-            android:layout_width="8dp"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" />
 
 
     </LinearLayout>
