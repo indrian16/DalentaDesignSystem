@@ -3,7 +3,8 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:theme="@style/Theme.DalentaDesignSystem.DarkActionBar">
+    android:theme="@style/Theme.DalentaDesignSystem.DarkActionBar"
+    android:id="@+id/parent_view">
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.MaterialComponents.Button.TextButton"

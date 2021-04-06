@@ -8,13 +8,18 @@ import com.google.android.material.button.MaterialButton
 
 class SmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton
+    var parentView: FrameLayout
 
     init {
         inflate(context, R.layout.small_button_primary, this)
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.SmallButtonPrimary)
+
+        val dimensionWidth = attributes.getLayoutDimension(R.styleable.Button_android_layout_width, LayoutParams.WRAP_CONTENT)
+        val dimensionHeight = attributes.getLayoutDimension(R.styleable.Button_android_layout_height, LayoutParams.WRAP_CONTENT)
+
         val params = LayoutParams(
-            attributes.getLayoutDimension(R.styleable.Button_android_layout_width, LayoutParams.WRAP_CONTENT),
-            attributes.getLayoutDimension(R.styleable.Button_android_layout_height, LayoutParams.WRAP_CONTENT)
+                dimensionWidth,
+                dimensionHeight
         )
 
         button = findViewById(R.id.button)
@@ -22,6 +27,14 @@ class SmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
             text = attributes.getString(R.styleable.Button_android_text) ?: "Button"
             layoutParams = params
             setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.Button_android_textSize, this.textSize))
+        }
+
+        parentView = findViewById(R.id.parent_view)
+        if (dimensionWidth == LayoutParams.MATCH_PARENT) {
+            parentView.layoutParams.width = LayoutParams.MATCH_PARENT
+        }
+        if (dimensionHeight == LayoutParams.MATCH_PARENT) {
+            parentView.layoutParams.height = LayoutParams.MATCH_PARENT
         }
 
         attributes.recycle()
