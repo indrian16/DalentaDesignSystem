@@ -2,6 +2,7 @@ package tech.dalenta.component
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.inputmethod.EditorInfo
 import android.widget.FrameLayout
 import android.widget.LinearLayout
@@ -27,9 +28,11 @@ class TextField(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
 
         textLabel.apply {
             text = attributes.getString(R.styleable.TextField_textLabel) ?: "Text Field Label"
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.TextField_textLabelSize, textLabel.textSize))
         }
         textInputEditText.apply {
             setText(attributes.getString(R.styleable.TextField_android_text))
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.TextField_android_textSize, textInputEditText.textSize))
             hint = attributes.getString(R.styleable.TextField_android_hint) ?: "Placeholder"
             inputType = attributes.getInt(R.styleable.TextField_android_inputType, EditorInfo.TYPE_CLASS_TEXT)
         }

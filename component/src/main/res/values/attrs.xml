@@ -50,10 +50,13 @@
     </declare-styleable>
 
     <declare-styleable name="TextField">
+        <attr name="textLabel" format="string"/>
+        <attr name="textLabelSize" format="dimension"/>
+
         <attr name="android:text"/>
+        <attr name="android:textSize"/>
         <attr name="android:hint"/>
         <attr name="android:inputType"/>
-        <attr name="textLabel" format="string"/>
     </declare-styleable>
 
 </resources>

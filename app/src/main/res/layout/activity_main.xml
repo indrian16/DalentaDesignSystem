@@ -1,141 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:layout_margin="16dp"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/layout_small_button"
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal">
-
-        <tech.dalenta.component.SmallButtonPrimary
-            android:id="@+id/btn_small_primary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Primary"
-            />
-
-        <View
-            android:layout_width="8dp"
-            android:layout_height="wrap_content"/>
-
-        <tech.dalenta.component.SmallButtonSecondary
-            android:id="@+id/btn_small_secondary"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Secondary"
-            android:textSize="14sp"/>
-
-        <View
-            android:layout_width="8dp"
-            android:layout_height="wrap_content"/>
-
-        <tech.dalenta.component.SmallButtonOutlined
-            android:id="@+id/btn_small_outlined"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Outlined"
-            android:textSize="14sp"/>
-
-    </LinearLayout>
-
-    <ScrollView
-        android:id="@+id/layout_large_button"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/layout_small_button">
+        android:layout_margin="16dp">
 
         <LinearLayout
+            android:id="@+id/layout_small_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <tech.dalenta.component.LargeButtonPrimary
-                android:id="@+id/btn_large_primary"
-                android:layout_width="match_parent"
+            <tech.dalenta.component.SmallButtonPrimary
+                android:id="@+id/btn_small_primary"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Primary"/>
+                android:text="Primary"
+                />
 
             <View
                 android:layout_width="8dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="8dp"/>
 
-            <tech.dalenta.component.LargeButtonSecondary
-                android:id="@+id/btn_large_secondary"
-                android:layout_width="match_parent"
+            <tech.dalenta.component.SmallButtonSecondary
+                android:id="@+id/btn_small_secondary"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Secondary"/>
+                android:text="Secondary"
+                android:textSize="14sp"/>
 
             <View
                 android:layout_width="8dp"
-                android:layout_height="wrap_content"/>
+                android:layout_height="8dp"/>
 
-            <tech.dalenta.component.LargeButtonOutlined
-                android:id="@+id/btn_large_outlined"
-                android:layout_width="match_parent"
+            <tech.dalenta.component.SmallButtonOutlined
+                android:id="@+id/btn_small_outlined"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Outlined"/>
+                android:text="Outlined"
+                android:textSize="14sp"/>
 
         </LinearLayout>
 
-    </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/layout_text_field"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical"
-        android:layout_below="@id/layout_large_button">
-
-        <tech.dalenta.component.TextField
+        <ScrollView
+            android:id="@+id/layout_large_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:textLabel="Edit Field Label"
-            android:text="Test set text"
-            android:inputType="number" />
+            android:layout_below="@id/layout_small_button">
 
-        <View
-            android:layout_width="wrap_content"
-            android:layout_height="16dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <tech.dalenta.component.TextField
+                <tech.dalenta.component.LargeButtonPrimary
+                    android:id="@+id/btn_large_primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Primary"/>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"/>
+
+                <tech.dalenta.component.LargeButtonSecondary
+                    android:id="@+id/btn_large_secondary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Secondary"/>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"/>
+
+                <tech.dalenta.component.LargeButtonOutlined
+                    android:id="@+id/btn_large_outlined"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Outlined"/>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.LargeButtonPrimary
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WRAP CONTENT"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layout_text_field"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="210dp"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:layout_below="@id/layout_large_button">
+
+            <tech.dalenta.component.TextField
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:textLabel="Edit Field Label"
+                app:textLabelSize="14sp"
+                android:text="Test set text"
+                android:textSize="16sp"
+                android:hint="Test Holder"
+                android:inputType="number" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <tech.dalenta.component.TextField
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layout_radio"
-        android:layout_width="match_parent"
-        android:layout_height="210dp"
-        android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        android:layout_below="@id/layout_text_field">
+        <LinearLayout
+            android:id="@+id/layout_radio"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/layout_text_field">
 
-        <tech.dalenta.component.Radio
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello Radio"
-            />
+            <tech.dalenta.component.Radio
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello Radio"
+                />
 
-        <View
-            android:layout_width="8dp"
-            android:layout_height="1dp"/>
+            <View
+                android:layout_width="8dp"
+                android:layout_height="1dp"/>
 
-        <tech.dalenta.component.Radio
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
+            <tech.dalenta.component.Radio
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
 
 
-    </LinearLayout>
+        </LinearLayout>
 
-</RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
