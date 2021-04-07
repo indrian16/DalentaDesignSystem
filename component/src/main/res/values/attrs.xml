@@ -34,6 +34,24 @@
         <attr name="iconGravity"/>
     </declare-styleable>
 
+    <declare-styleable name="IconSmallButtonPrimary">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="icon"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconSmallButtonSecondary">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="icon"/>
+    </declare-styleable>
+
+    <declare-styleable name="IconSmallButtonOutlined">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="icon"/>
+    </declare-styleable>
+
     <declare-styleable name="LargeButtonPrimary">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
