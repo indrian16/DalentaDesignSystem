@@ -20,6 +20,7 @@
         android:text="Button"
         android:textAllCaps="false"
         app:cornerRadius="10dp"
+        app:elevation="0dp"
         />
 
 </FrameLayout>

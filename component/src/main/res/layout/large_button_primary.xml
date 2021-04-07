@@ -19,6 +19,7 @@
         android:textAllCaps="false"
         android:textSize="15sp"
         app:cornerRadius="10dp"
+        app:elevation="0dp"
         />
 
 </FrameLayout>

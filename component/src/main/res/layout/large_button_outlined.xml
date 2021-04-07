@@ -21,6 +21,7 @@
         android:textSize="15sp"
         app:cornerRadius="10dp"
         app:strokeColor="@color/blue_3"
+        app:elevation="0dp"
         />
 
 </FrameLayout>
