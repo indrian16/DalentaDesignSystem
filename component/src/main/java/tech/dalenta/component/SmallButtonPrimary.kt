@@ -27,6 +27,8 @@ class SmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
             text = attributes.getString(R.styleable.Button_android_text) ?: "Button"
             layoutParams = params
             setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.Button_android_textSize, this.textSize))
+            icon = attributes.getDrawable(R.styleable.SmallButtonPrimary_icon)
+            iconGravity = attributes.getInt(R.styleable.SmallButtonPrimary_iconGravity, button.iconGravity)
         }
 
         parentView = findViewById(R.id.parent_view)

@@ -21,6 +21,7 @@
         android:textAllCaps="false"
         app:cornerRadius="10dp"
         app:elevation="0dp"
+        app:iconPadding="8dp"
         />
 
 </FrameLayout>

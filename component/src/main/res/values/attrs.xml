@@ -12,6 +12,8 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="icon"/>
+        <attr name="iconGravity"/>
     </declare-styleable>
 
     <declare-styleable name="SmallButtonSecondary">
@@ -19,6 +21,8 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="icon"/>
+        <attr name="iconGravity"/>
     </declare-styleable>
 
     <declare-styleable name="SmallButtonOutlined">
@@ -26,6 +30,8 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="icon"/>
+        <attr name="iconGravity"/>
     </declare-styleable>
 
     <declare-styleable name="LargeButtonPrimary">

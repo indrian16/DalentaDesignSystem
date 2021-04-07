@@ -49,11 +49,98 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/layout_icon_small_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/layout_small_button">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <tech.dalenta.component.SmallButtonPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_search"/>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonPrimary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_search"
+                    app:iconGravity="end"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <tech.dalenta.component.SmallButtonSecondary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_search"/>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonSecondary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_search"
+                    app:iconGravity="end"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <tech.dalenta.component.SmallButtonOutlined
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_search"/>
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonOutlined
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:icon="@drawable/ic_search"
+                    app:iconGravity="end"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
         <ScrollView
             android:id="@+id/layout_large_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/layout_small_button">
+            android:layout_below="@id/layout_icon_small_button">
 
             <LinearLayout
                 android:layout_width="match_parent"

@@ -27,6 +27,8 @@ class SmallButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLayout(
             text = attributes.getString(R.styleable.Button_android_text) ?: "Button"
             layoutParams = params
             setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.Button_android_textSize, this.textSize))
+            icon = attributes.getDrawable(R.styleable.SmallButtonOutlined_icon)
+            iconGravity = attributes.getInt(R.styleable.SmallButtonOutlined_iconGravity, button.iconGravity)
         }
 
         parentView = findViewById(R.id.parent_view)
