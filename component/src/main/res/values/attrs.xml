@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="color_state" format="flags">
+        <flag name="primary" value="0"/>
+        <flag name="gray" value="1"/>
+        <flag name="green" value="2"/>
+        <flag name="red" value="3"/>
+    </attr>
+
     <declare-styleable name="Button">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
@@ -14,6 +21,7 @@
         <attr name="android:textSize"/>
         <attr name="icon"/>
         <attr name="iconGravity"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="SmallButtonSecondary">
@@ -23,6 +31,7 @@
         <attr name="android:textSize"/>
         <attr name="icon"/>
         <attr name="iconGravity"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="SmallButtonOutlined">
@@ -32,6 +41,7 @@
         <attr name="android:textSize"/>
         <attr name="icon"/>
         <attr name="iconGravity"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="IconSmallButtonPrimary">

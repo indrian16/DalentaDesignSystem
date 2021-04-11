@@ -18,27 +18,111 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <tech.dalenta.component.SmallButtonPrimary
+                    android:id="@+id/btn_small_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary"
+                    />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonPrimary
+                    android:id="@+id/btn_small_primary_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary"
+                    app:color_state="gray"
+                    />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonPrimary
+                    android:id="@+id/btn_small_primary_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Primary"
+                    app:color_state="green"
+                    />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+            </LinearLayout>
+
             <tech.dalenta.component.SmallButtonPrimary
-                android:id="@+id/btn_small_primary"
+                android:id="@+id/btn_small_primary_red"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Primary"
-                />
+                app:color_state="red"/>
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="54dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <tech.dalenta.component.SmallButtonSecondary
+                    android:id="@+id/btn_small_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonSecondary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    app:color_state="gray"
+                    />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+                <tech.dalenta.component.SmallButtonSecondary
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    app:color_state="green"
+                    />
+
+                <View
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"/>
+
+            </LinearLayout>
 
             <View
                 android:layout_width="8dp"
                 android:layout_height="8dp"/>
 
             <tech.dalenta.component.SmallButtonSecondary
-                android:id="@+id/btn_small_secondary"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Secondary"
-                android:textSize="14sp"/>
+                android:textSize="14sp"
+                app:color_state="red"
+                />
 
             <View
                 android:layout_width="8dp"
-                android:layout_height="8dp"/>
+                android:layout_height="54dp"/>
 
             <tech.dalenta.component.SmallButtonOutlined
                 android:id="@+id/btn_small_outlined"

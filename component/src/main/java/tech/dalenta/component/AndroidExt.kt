@@ -2,7 +2,8 @@ package tech.dalenta.component
 
 import android.content.Context
 import android.os.Build
-import android.widget.TextView
+import androidx.core.content.ContextCompat
+import com.google.android.material.button.MaterialButton
 import com.google.android.material.radiobutton.MaterialRadioButton
 
 fun MaterialRadioButton.setAppearance(context: Context, res: Int) {
@@ -11,4 +12,16 @@ fun MaterialRadioButton.setAppearance(context: Context, res: Int) {
     } else {
         setTextAppearance(res)
     }
+}
+
+fun MaterialButton.changeBackgroundColor(resId: Int) {
+    backgroundTintList = ContextCompat.getColorStateList(this.context, resId)
+}
+
+fun MaterialButton.changeTextColor(resId: Int) {
+    setTextColor(ContextCompat.getColorStateList(this.context, resId))
+}
+
+fun MaterialButton.changeRippleColor(resId: Int) {
+    rippleColor = ContextCompat.getColorStateList(this.context, resId)
 }
