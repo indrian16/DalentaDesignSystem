@@ -37,7 +37,7 @@ class SmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
             iconGravity = attributes.getInt(R.styleable.SmallButtonPrimary_iconGravity, button.iconGravity)
         }
 
-        // Set Dimension Parent View
+        // Set Dimension Parent View If MATCH_PARENT condition
         parentView = findViewById(R.id.parent_view)
         if (dimensionWidth == LayoutParams.MATCH_PARENT) {
             parentView.layoutParams.width = LayoutParams.MATCH_PARENT
