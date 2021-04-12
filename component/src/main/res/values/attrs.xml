@@ -67,6 +67,7 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="LargeButtonSecondary">
@@ -74,6 +75,7 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="LargeButtonOutlined">
@@ -81,6 +83,7 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="TextField">

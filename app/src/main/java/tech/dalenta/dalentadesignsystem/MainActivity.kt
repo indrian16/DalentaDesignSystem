@@ -27,16 +27,16 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        findViewById<LargeButtonPrimary>(R.id.btn_large_primary).apply {
-            setOnClickListener {
-                Toast.makeText(it.context, "LargeButtonPrimary", Toast.LENGTH_SHORT).show()
-            }
-        }
-        findViewById<LargeButtonSecondary>(R.id.btn_large_secondary).apply {
-            setOnClickListener {
-                Toast.makeText(it.context, "LargeButtonSecondary", Toast.LENGTH_SHORT).show()
-            }
-        }
+//        findViewById<LargeButtonPrimary>(R.id.btn_large_primary).apply {
+//            setOnClickListener {
+//                Toast.makeText(it.context, "LargeButtonPrimary", Toast.LENGTH_SHORT).show()
+//            }
+//        }
+//        findViewById<LargeButtonSecondary>(R.id.btn_large_secondary).apply {
+//            setOnClickListener {
+//                Toast.makeText(it.context, "LargeButtonSecondary", Toast.LENGTH_SHORT).show()
+//            }
+//        }
         findViewById<LargeButtonOutlined>(R.id.btn_large_outlined).apply {
             setOnClickListener {
                 Toast.makeText(it.context, "LargeButtonOutlined", Toast.LENGTH_SHORT).show()

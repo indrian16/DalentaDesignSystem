@@ -38,6 +38,22 @@ class LargeButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
             parentView.layoutParams.height = LayoutParams.MATCH_PARENT
         }
 
+        // Set Color State
+        when (attributes.getInt(R.styleable.LargeButtonPrimary_color_state, ColorState.PRIMARY)) {
+            ColorState.PRIMARY -> {
+                button.changeBackgroundColor(R.color.blue_3)
+            }
+            ColorState.GRAY -> {
+                button.changeBackgroundColor(R.color.grey_3)
+            }
+            ColorState.GREEN -> {
+                button.changeBackgroundColor(R.color.green_3)
+            }
+            ColorState.RED -> {
+                button.changeBackgroundColor(R.color.red_3)
+            }
+        }
+
         attributes.recycle()
     }
 
