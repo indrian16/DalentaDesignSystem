@@ -25,3 +25,11 @@ fun MaterialButton.changeTextColor(resId: Int) {
 fun MaterialButton.changeRippleColor(resId: Int) {
     rippleColor = ContextCompat.getColorStateList(this.context, resId)
 }
+
+fun MaterialButton.changeStrokeColor(resId: Int) {
+    strokeColor = ContextCompat.getColorStateList(this.context, resId)
+}
+
+fun MaterialButton.changeIconColor(resId: Int) {
+    iconTint = ContextCompat.getColorStateList(this.context, resId)
+}

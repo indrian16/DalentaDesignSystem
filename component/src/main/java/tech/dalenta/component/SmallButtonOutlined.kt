@@ -39,6 +39,42 @@ class SmallButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLayout(
             parentView.layoutParams.height = LayoutParams.MATCH_PARENT
         }
 
+        // Set Color State
+        when (attributes.getInt(R.styleable.SmallButtonOutlined_color_state, ColorState.PRIMARY)) {
+            ColorState.PRIMARY -> {
+                button.apply {
+                    changeTextColor(R.color.blue_3)
+                    changeStrokeColor(R.color.blue_3)
+                    changeIconColor(R.color.blue_3)
+                    changeRippleColor(R.color.blue_4)
+                }
+            }
+            ColorState.GRAY -> {
+                button.apply {
+                    changeTextColor(R.color.grey_3)
+                    changeStrokeColor(R.color.grey_3)
+                    changeIconColor(R.color.grey_3)
+                    changeRippleColor(R.color.grey_4)
+                }
+            }
+            ColorState.GREEN -> {
+                button.apply {
+                    changeTextColor(R.color.green_3)
+                    changeStrokeColor(R.color.green_3)
+                    changeIconColor(R.color.green_3)
+                    changeRippleColor(R.color.green_4)
+                }
+            }
+            ColorState.RED -> {
+                button.apply {
+                    changeTextColor(R.color.red_3)
+                    changeStrokeColor(R.color.red_3)
+                    changeIconColor(R.color.red_3)
+                    changeRippleColor(R.color.red_4)
+                }
+            }
+        }
+
         attributes.recycle()
     }
 
