@@ -764,7 +764,7 @@
             android:layout_marginTop="16dp"
             android:orientation="vertical">
 
-            <tech.dalenta.component.TextField
+            <tech.dalenta.component.TextInput
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:textLabel="Edit Field Label"
@@ -778,7 +778,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="16dp"/>
 
-            <tech.dalenta.component.TextField
+            <tech.dalenta.component.TextInput
+                android:id="@+id/text_input"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

@@ -86,7 +86,7 @@
         <attr name="color_state"/>
     </declare-styleable>
 
-    <declare-styleable name="TextField">
+    <declare-styleable name="TextInput">
         <attr name="textLabel" format="string"/>
         <attr name="textLabelSize" format="dimension"/>
 
