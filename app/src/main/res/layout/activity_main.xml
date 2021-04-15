@@ -82,7 +82,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="S"
+            android:text="O"
             />
 
         <tech.dalenta.component.SmallButtonOutlined
@@ -90,21 +90,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:color_state="gray"
-            android:text="S"/>
+            android:text="O"/>
 
         <tech.dalenta.component.SmallButtonOutlined
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:color_state="green"
-            android:text="S"/>
+            android:text="O"/>
 
         <tech.dalenta.component.SmallButtonOutlined
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             app:color_state="red"
-            android:text="S"/>
+            android:text="O"/>
 
     </LinearLayout>
 
@@ -121,7 +121,8 @@
             app:layout_constraintBottom_toTopOf="@+id/smallButtonSecondary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <tech.dalenta.component.SmallButtonSecondary
             android:id="@+id/smallButtonSecondary"
