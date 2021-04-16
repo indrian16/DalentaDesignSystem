@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,139 +9,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <tech.dalenta.component.SmallButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="P"/>
+        <include
+            layout="@layout/small_button_layout"/>
 
-        <tech.dalenta.component.SmallButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="gray"
-            android:text="P"/>
-
-        <tech.dalenta.component.SmallButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="green"
-            android:text="P"/>
-
-        <tech.dalenta.component.SmallButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="red"
-            android:text="P"/>
+        <include
+            layout="@layout/large_button_layout"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <tech.dalenta.component.SmallButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="S"
-            />
-
-        <tech.dalenta.component.SmallButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="gray"
-            android:text="S"/>
-
-        <tech.dalenta.component.SmallButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="green"
-            android:text="S"/>
-
-        <tech.dalenta.component.SmallButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="red"
-            android:text="S"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <tech.dalenta.component.SmallButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="O"
-            />
-
-        <tech.dalenta.component.SmallButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="gray"
-            android:text="O"/>
-
-        <tech.dalenta.component.SmallButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="green"
-            android:text="O"/>
-
-        <tech.dalenta.component.SmallButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            app:color_state="red"
-            android:text="O"/>
-
-    </LinearLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="300dp">
-
-        <tech.dalenta.component.SmallButtonPrimary
-            android:id="@+id/smallButtonPrimary"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/smallButtonSecondary"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_chainStyle="packed" />
-
-        <tech.dalenta.component.SmallButtonSecondary
-            android:id="@+id/smallButtonSecondary"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/smallButtonOutlined"
-            app:layout_constraintEnd_toEndOf="@+id/smallButtonPrimary"
-            app:layout_constraintStart_toStartOf="@+id/smallButtonPrimary"
-            app:layout_constraintTop_toBottomOf="@+id/smallButtonPrimary" />
-
-        <tech.dalenta.component.SmallButtonOutlined
-            android:id="@+id/smallButtonOutlined"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/smallButtonSecondary"
-            app:layout_constraintStart_toStartOf="@+id/smallButtonSecondary"
-            app:layout_constraintTop_toBottomOf="@+id/smallButtonSecondary" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</LinearLayout>
+</ScrollView>

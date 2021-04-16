@@ -67,6 +67,8 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="icon"/>
+        <attr name="iconGravity"/>
         <attr name="color_state"/>
     </declare-styleable>
 
@@ -75,6 +77,8 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="icon"/>
+        <attr name="iconGravity"/>
         <attr name="color_state"/>
     </declare-styleable>
 
@@ -83,6 +87,8 @@
         <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
+        <attr name="icon"/>
+        <attr name="iconGravity"/>
         <attr name="color_state"/>
     </declare-styleable>
 

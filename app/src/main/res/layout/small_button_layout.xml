@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!--Small-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="gray"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="gray"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="gray"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="green"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="green"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="red"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="red"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="red"/>
+
+    </LinearLayout>
+
+    <!--Small Icon-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:icon="@drawable/ic_search"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:icon="@drawable/ic_search"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:icon="@drawable/ic_search"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="gray"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="end"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="gray"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="end"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="gray"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="end"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="green"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="start"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="green"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="start"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="green"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="start"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <tech.dalenta.component.SmallButtonPrimary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="red"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="end"/>
+
+        <tech.dalenta.component.SmallButtonSecondary
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="red"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="end"/>
+
+        <tech.dalenta.component.SmallButtonOutlined
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Small"
+            app:color_state="red"
+            app:icon="@drawable/ic_search"
+            app:iconGravity="end"/>
+
+    </LinearLayout>
+
+</LinearLayout>
