@@ -16,6 +16,7 @@
         app:elevation="0dp"
         app:icon="@drawable/ic_search"
         app:iconTint="@color/blue_3"
+        app:iconSize="18dp"
         />
 
 </FrameLayout>

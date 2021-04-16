@@ -21,6 +21,9 @@
         <include
             layout="@layout/icon_small_button_layout"/>
 
+        <include
+            layout="@layout/icon_large_button_layout"/>
+
     </LinearLayout>
 
 </ScrollView>

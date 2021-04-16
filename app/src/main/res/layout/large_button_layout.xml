@@ -7,266 +7,175 @@
     android:padding="16dp">
 
     <!--Primary-->
-    <LinearLayout
+
+    <tech.dalenta.component.LargeButtonPrimary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large" />
 
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"/>
-
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonPrimary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"/>
 
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="gray"/>
-
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="gray"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonPrimary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:color_state="gray"/>
 
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="green"/>
-
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="green"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonPrimary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="gray"/>
 
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="red"/>
+    <tech.dalenta.component.LargeButtonPrimary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:color_state="green"/>
 
-        <tech.dalenta.component.LargeButtonPrimary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="red"/>
+    <tech.dalenta.component.LargeButtonPrimary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="green"/>
 
-    </LinearLayout>
+    <tech.dalenta.component.LargeButtonPrimary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:color_state="red"/>
+
+    <tech.dalenta.component.LargeButtonPrimary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="red"
+        />
 
     <!--Secondary-->
 
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonSecondary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large" />
 
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"/>
-
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonSecondary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"/>
 
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="gray"/>
-
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="gray"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonSecondary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:color_state="gray"/>
 
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="green"/>
-
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="green"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonSecondary
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="gray"/>
 
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="red"/>
+    <tech.dalenta.component.LargeButtonSecondary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:color_state="green"/>
 
-        <tech.dalenta.component.LargeButtonSecondary
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="red"/>
+    <tech.dalenta.component.LargeButtonSecondary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="green"/>
 
-    </LinearLayout>
+    <tech.dalenta.component.LargeButtonSecondary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:color_state="red"/>
+
+    <tech.dalenta.component.LargeButtonSecondary
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="red"
+        />
 
     <!--Outlined-->
 
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonOutlined
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large" />
 
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"/>
-
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonOutlined
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"/>
 
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="gray"/>
-
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="gray"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonOutlined
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:color_state="gray"/>
 
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="green"/>
-
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="green"/>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <tech.dalenta.component.LargeButtonOutlined
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="gray"/>
 
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1"
-            app:color_state="red"/>
+    <tech.dalenta.component.LargeButtonOutlined
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:color_state="green"/>
 
-        <tech.dalenta.component.LargeButtonOutlined
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Large"
-            android:layout_weight="1.2"
-            app:icon="@drawable/ic_search"
-            app:color_state="red"/>
+    <tech.dalenta.component.LargeButtonOutlined
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="green"/>
 
-    </LinearLayout>
+    <tech.dalenta.component.LargeButtonOutlined
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:color_state="red"/>
+
+    <tech.dalenta.component.LargeButtonOutlined
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Large"
+        app:icon="@drawable/ic_search"
+        app:iconGravity="textStart"
+        app:color_state="red"
+        />
+
 
 </LinearLayout>

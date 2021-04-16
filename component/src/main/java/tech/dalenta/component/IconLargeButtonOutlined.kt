@@ -7,21 +7,21 @@ import androidx.core.content.ContextCompat
 import com.google.android.material.button.MaterialButton
 import tech.dalenta.component.utils.ViewUtils
 
-class IconSmallButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
+class IconLargeButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton
     var parentView: FrameLayout
 
     init {
 
         // Inflating Layout
-        inflate(context, R.layout.icon_small_button_outlined, this)
+        inflate(context, R.layout.icon_large_button_outlined, this)
 
         // Get Attr
-        val attributes = context.obtainStyledAttributes(attrs, R.styleable.IconSmallButtonOutlined)
+        val attributes = context.obtainStyledAttributes(attrs, R.styleable.IconLargeButtonOutlined)
 
         // Get Dimension
-        val dimensionWidth = ViewUtils.getOverflowDimension(attributes.getLayoutDimension(R.styleable.IconSmallButtonOutlined_android_layout_width, LayoutParams.WRAP_CONTENT))
-        val dimensionHeight = ViewUtils.getOverflowDimension(attributes.getLayoutDimension(R.styleable.IconSmallButtonOutlined_android_layout_height, LayoutParams.WRAP_CONTENT))
+        val dimensionWidth = ViewUtils.getOverflowDimension(attributes.getLayoutDimension(R.styleable.IconLargeButtonOutlined_android_layout_width, LayoutParams.WRAP_CONTENT))
+        val dimensionHeight = ViewUtils.getOverflowDimension(attributes.getLayoutDimension(R.styleable.IconLargeButtonOutlined_android_layout_height, LayoutParams.WRAP_CONTENT))
         val params = LayoutParams(
                 dimensionWidth,
                 dimensionHeight
@@ -35,10 +35,10 @@ class IconSmallButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLay
             layoutParams = params
 
             // Set Icon attribute
-            icon = attributes.getDrawable(R.styleable.IconSmallButtonOutlined_icon) ?: ContextCompat.getDrawable(context, R.drawable.ic_search)
+            icon = attributes.getDrawable(R.styleable.IconLargeButtonOutlined_icon) ?: ContextCompat.getDrawable(context, R.drawable.ic_search)
 
             // Set Color State
-            when (attributes.getInt(R.styleable.IconSmallButtonOutlined_color_state, ColorState.PRIMARY)) {
+            when (attributes.getInt(R.styleable.IconLargeButtonOutlined_color_state, ColorState.PRIMARY)) {
                 ColorState.PRIMARY -> {
                     changeStrokeColor(R.color.blue_3)
                     changeIconColor(R.color.blue_3)
