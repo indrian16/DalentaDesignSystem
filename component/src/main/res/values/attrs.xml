@@ -48,18 +48,21 @@
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
         <attr name="icon"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="IconSmallButtonSecondary">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
         <attr name="icon"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="IconSmallButtonOutlined">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
         <attr name="icon"/>
+        <attr name="color_state"/>
     </declare-styleable>
 
     <declare-styleable name="LargeButtonPrimary">
