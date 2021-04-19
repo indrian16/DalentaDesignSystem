@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val textInput = findViewById<TextInput>(R.id.text_input)
-        textInput.setCaptionState(CaptionState.ERROR)
+        textInput.captionState = CaptionState.ERROR
         textInput.textCaption = "Error nih"
     }
 }

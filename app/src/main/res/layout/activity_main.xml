@@ -17,6 +17,8 @@
             android:id="@+id/text_input"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:caption_state="success"
+            app:textCaption="Wow Success"
             />
 
     </LinearLayout>

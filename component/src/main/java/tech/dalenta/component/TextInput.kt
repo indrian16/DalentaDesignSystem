@@ -50,9 +50,9 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
         }
 
         // Set Attr
-        setCaptionState(attributes.getInt(R.styleable.TextInput_caption_state, CaptionState.NEUTRAL))
         textCaptionView.apply {
             text = attributes.getString(R.styleable.TextInput_textCaption) ?: "Caption"
+            captionState = attributes.getInt(R.styleable.TextInput_caption_state, CaptionState.NONE)
         }
 
         attributes.recycle()
@@ -62,7 +62,9 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
         get() = textCaptionView.text.toString()
         set(value) { textCaptionView.text = value }
 
-    fun setCaptionState(captionState: Int): Unit = textCaptionView.setCaptionState(captionState)
+    var captionState: Int
+        get() = textCaptionView.captionState
+        set(value) { textCaptionView.captionState = value }
 
     fun addTextChangedListener(textWatcher: TextWatcher) {
         textInputEditText.addTextChangedListener(textWatcher)
