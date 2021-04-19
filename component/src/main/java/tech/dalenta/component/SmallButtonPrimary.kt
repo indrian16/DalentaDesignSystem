@@ -69,6 +69,14 @@ class SmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
         attributes.recycle()
     }
 
+    /**
+     *
+     * Properties
+     * */
+    var text: String
+        get() = button.text.toString()
+        set(value) { button.text = value }
+
     override fun setOnClickListener(l: OnClickListener?) {
         button.setOnClickListener(l)
     }
