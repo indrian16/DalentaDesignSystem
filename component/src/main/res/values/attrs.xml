@@ -7,6 +7,14 @@
         <flag name="red" value="3"/>
     </attr>
 
+    <attr name="caption_state" format="flags">
+        <flag name="none" value="-1"/>
+        <flag name="neutral" value="0"/>
+        <flag name="warning" value="1"/>
+        <flag name="success" value="2"/>
+        <flag name="error" value="3"/>
+    </attr>
+
     <declare-styleable name="Button">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
@@ -119,11 +127,17 @@
     <declare-styleable name="TextInput">
         <attr name="textLabel" format="string"/>
         <attr name="textLabelSize" format="dimension"/>
+        <attr name="textCaption" format="string"/>
+        <attr name="caption_state"/>
 
         <attr name="android:text"/>
         <attr name="android:textSize"/>
         <attr name="android:hint"/>
         <attr name="android:inputType"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextCaption">
+        <attr name="caption_state"/>
     </declare-styleable>
 
 </resources>

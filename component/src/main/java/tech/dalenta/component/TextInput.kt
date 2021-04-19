@@ -10,6 +10,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import tech.dalenta.component.utils.CaptionState
 
 class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
 
@@ -17,20 +18,30 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
     var textLabel: TextView
     var textInputLayout: TextInputLayout
     var textInputEditText: TextInputEditText
+    var textCaptionView: TextCaption
 
     init {
+
+        // Inflating Layout
         inflate(context, R.layout.text_input_view, this)
+
+        // Get Attr
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.TextInput)
 
+        // Bind View
         parentView = findViewById(R.id.parent_view)
         textLabel = findViewById(R.id.tv_label)
         textInputLayout = findViewById(R.id.text_input_layout)
         textInputEditText = findViewById(R.id.text_input_edit_text)
+        textCaptionView = findViewById(R.id.tv_caption)
 
+        // Set Attr Text Label
         textLabel.apply {
             text = attributes.getString(R.styleable.TextInput_textLabel) ?: "Text Field Label"
             setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.TextInput_textLabelSize, textLabel.textSize))
         }
+
+        // Set Attr Edit Text
         textInputEditText.apply {
             setText(attributes.getString(R.styleable.TextInput_android_text))
             setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.TextInput_android_textSize, textInputEditText.textSize))
@@ -38,8 +49,20 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
             inputType = attributes.getInt(R.styleable.TextInput_android_inputType, EditorInfo.TYPE_CLASS_TEXT)
         }
 
+        // Set Attr
+        setCaptionState(attributes.getInt(R.styleable.TextInput_caption_state, CaptionState.NEUTRAL))
+        textCaptionView.apply {
+            text = attributes.getString(R.styleable.TextInput_textCaption) ?: "Caption"
+        }
+
         attributes.recycle()
     }
+
+    var textCaption: String
+        get() = textCaptionView.text.toString()
+        set(value) { textCaptionView.text = value }
+
+    fun setCaptionState(captionState: Int): Unit = textCaptionView.setCaptionState(captionState)
 
     fun addTextChangedListener(textWatcher: TextWatcher) {
         textInputEditText.addTextChangedListener(textWatcher)

@@ -1,4 +1,4 @@
-package tech.dalenta.component
+package tech.dalenta.component.utils
 
 object ColorState {
     const val PRIMARY = 0

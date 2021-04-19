@@ -44,6 +44,15 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <tech.dalenta.component.TextCaption
+        android:id="@+id/tv_caption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Hello World"
+        app:caption_state="neutral"
+        />
+
     <View
         android:layout_width="wrap_content"
         android:layout_height="1dp"/>
