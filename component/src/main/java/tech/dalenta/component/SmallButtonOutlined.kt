@@ -5,8 +5,7 @@ import android.util.AttributeSet
 import android.util.TypedValue
 import android.widget.FrameLayout
 import com.google.android.material.button.MaterialButton
-import tech.dalenta.component.utils.ColorState
-import tech.dalenta.component.utils.ViewUtils
+import tech.dalenta.component.utils.*
 
 class SmallButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton

@@ -1,4 +1,4 @@
-package tech.dalenta.component
+package tech.dalenta.component.utils
 
 import android.content.Context
 import android.content.res.Resources
@@ -7,7 +7,6 @@ import android.graphics.PorterDuffColorFilter
 import android.os.Build
 import android.view.View
 import androidx.annotation.ColorRes
-import androidx.annotation.DimenRes
 import androidx.annotation.DrawableRes
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.core.content.ContextCompat
@@ -20,6 +19,10 @@ fun View.toVisible() {
 
 fun View.toGone() {
     visibility = View.GONE
+}
+
+fun View.toInvisible() {
+    visibility = View.INVISIBLE
 }
 
 val Int.dp: Int

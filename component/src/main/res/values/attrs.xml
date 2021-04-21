@@ -130,6 +130,11 @@
         <attr name="textCaption" format="string"/>
         <attr name="caption_state"/>
 
+        <attr name="endIconDrawable"/>
+        <attr name="endIconMode"/>
+
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
         <attr name="android:text"/>
         <attr name="android:textSize"/>
         <attr name="android:hint"/>

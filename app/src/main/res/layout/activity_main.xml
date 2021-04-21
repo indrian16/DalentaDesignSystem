@@ -14,11 +14,25 @@
         android:padding="16dp">
 
         <tech.dalenta.component.TextInput
-            android:id="@+id/text_input"
-            android:layout_width="wrap_content"
+            android:id="@+id/text_input_email"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:caption_state="success"
-            app:textCaption="Wow Success"
+            app:textLabel="Email"
+            android:hint="name@google.com"
+            android:inputType="textEmailAddress"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/ic_email"
+            app:caption_state="none"
+            />
+
+        <tech.dalenta.component.TextInput
+            android:id="@+id/text_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:textLabel="Password"
+            android:inputType="textPassword"
+            app:endIconMode="password_toggle"
             />
 
     </LinearLayout>

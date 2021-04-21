@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import androidx.core.content.ContextCompat
 import com.google.android.material.radiobutton.MaterialRadioButton
+import tech.dalenta.component.utils.setAppearance
 
 class Radio constructor(
         context: Context,
