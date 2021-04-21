@@ -19,22 +19,22 @@ class TextCaption(context: Context, private val attrs: AttributeSet?) : AppCompa
             // Set Attr
             when (value) {
                 CaptionState.NEUTRAL -> {
-                    leftCompoundDrawables(R.drawable.ic_info, R.dimen.icon_size)
+                    leftCompoundDrawables(R.drawable.ic_info)
                     changeTextColor(R.color.grey_2)
                     changeCompoundDrawableColor(R.color.grey_2)
                 }
                 CaptionState.WARING -> {
-                    leftCompoundDrawables(R.drawable.ic_info, R.dimen.icon_size)
+                    leftCompoundDrawables(R.drawable.ic_info)
                     changeTextColor(R.color.orange_2)
                     changeCompoundDrawableColor(R.color.orange_2)
                 }
                 CaptionState.SUCCESS -> {
-                    leftCompoundDrawables(R.drawable.ic_success, R.dimen.icon_size)
+                    leftCompoundDrawables(R.drawable.ic_success)
                     changeTextColor(R.color.green_2)
                     changeCompoundDrawableColor(R.color.green_2)
                 }
                 CaptionState.ERROR -> {
-                    leftCompoundDrawables(R.drawable.ic_error, R.dimen.icon_size)
+                    leftCompoundDrawables(R.drawable.ic_error)
                     changeTextColor(R.color.red_2)
                     changeCompoundDrawableColor(R.color.red_2)
                 }

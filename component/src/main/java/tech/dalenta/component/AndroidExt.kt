@@ -48,9 +48,9 @@ fun AppCompatTextView.changeTextColor(@ColorRes resId: Int) {
     setTextColor(ContextCompat.getColorStateList(this.context, resId))
 }
 
-fun AppCompatTextView.leftCompoundDrawables(@DrawableRes resId: Int, @DimenRes sizeRes: Int) {
+fun AppCompatTextView.leftCompoundDrawables(@DrawableRes resId: Int) {
     val drawable = ContextCompat.getDrawable(context, resId)
-    val size = resources.getDimensionPixelSize(sizeRes)
+    val size = 14.dp
     drawable?.setBounds(0, 0, size, size)
     this.setCompoundDrawables(drawable, null, null, null)
 }
