@@ -35,6 +35,12 @@
             app:endIconMode="password_toggle"
             />
 
+        <tech.dalenta.component.LargeButtonPrimary
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Login"/>
+
     </LinearLayout>
 
 </ScrollView>
