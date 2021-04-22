@@ -53,6 +53,7 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
         textInputLayout.apply {
             changeEndIconDrawable(attributes.getDrawable(R.styleable.TextInput_endIconDrawable))
             changeEndIconMode(attributes.getInt(R.styleable.TextInput_endIconMode, 0))
+            suffixText = attributes.getString(R.styleable.TextInput_suffixText)
         }
 
         // Set Attr Edit Text

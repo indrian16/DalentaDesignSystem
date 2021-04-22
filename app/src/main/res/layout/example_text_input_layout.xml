@@ -24,8 +24,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         app:textLabel="Password"
+        android:hint="Masukan password mu"
         android:inputType="textPassword"
         app:endIconMode="password_toggle"
+        app:caption_state="none"
+        />
+
+    <tech.dalenta.component.TextInput
+        android:id="@+id/text_input_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        app:textLabel="Umur"
+        android:hint="Umur berapa 😅"
+        app:suffixText="Tahun"
+        android:inputType="number"
         app:caption_state="none"
         />
 
@@ -33,6 +46,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Login"/>
+        android:text="Daftar"/>
 
 </LinearLayout>

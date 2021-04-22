@@ -132,6 +132,7 @@
 
         <attr name="endIconDrawable"/>
         <attr name="endIconMode"/>
+        <attr name="suffixText"/>
 
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>

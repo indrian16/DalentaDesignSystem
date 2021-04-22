@@ -14,8 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-
-
         /**
          *
          * Login Example
@@ -38,9 +36,7 @@ class MainActivity : AppCompatActivity() {
         val textInputPassword = findViewById<TextInput>(R.id.text_input_password)
         textInputPassword.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
-
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
-
             override fun afterTextChanged(s: Editable?) {
                 if ((s?.length ?: 0) <= 6) {
                     textInputPassword.setCaptionState(CaptionState.ERROR)
@@ -48,6 +44,30 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     textInputPassword.setCaptionState(CaptionState.SUCCESS)
                     textInputPassword.textCaption = "Keren"
+                }
+            }
+        })
+
+        val textInputAge = findViewById<TextInput>(R.id.text_input_age)
+        textInputAge.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+
+                if (!s.isNullOrEmpty()) {
+                    if (s.toString().toLong() < 18 ) {
+                        textInputAge.setCaptionState(CaptionState.WARING)
+                        textInputAge.textCaption = "Ih muda nya kamu"
+                    } else {
+                        textInputAge.setCaptionState(CaptionState.SUCCESS)
+                        textInputAge.textCaption = "Udah mulai dewasa ya"
+                    }
                 }
             }
         })

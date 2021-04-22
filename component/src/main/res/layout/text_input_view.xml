@@ -30,6 +30,9 @@
         app:boxStrokeWidth="1dp"
         app:boxStrokeWidthFocused="0dp"
         app:boxBackgroundColor="@color/grey_5"
+        app:suffixTextAppearance="@style/TextAppearance.DalentaDesignSystem.Body1"
+        app:suffixTextColor="@color/grey_3"
+        app:expandedHintEnabled="false"
         app:boxStrokeColor="@color/dalenta_outlined_stroke_color">
 
         <com.google.android.material.textfield.TextInputEditText
