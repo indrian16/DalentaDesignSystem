@@ -142,6 +142,11 @@
         <attr name="android:inputType"/>
     </declare-styleable>
 
+    <declare-styleable name="SelectField">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+    </declare-styleable>
+
     <declare-styleable name="TextCaption">
         <attr name="caption_state"/>
     </declare-styleable>

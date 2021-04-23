@@ -13,38 +13,23 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <tech.dalenta.component.SearchBar
-            android:id="@+id/search_bar"
+        <tech.dalenta.component.SelectField
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Cari makanan"
-            android:text="Sanga Cabe Salay"
-            android:textSize="16sp"
-            android:inputType="text"/>
-
-        <TextView
-            android:id="@+id/text_search_value"
-            android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.DalentaDesignSystem.Body2" />
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:orientation="horizontal">
 
-            <tech.dalenta.component.SearchBar
+            <tech.dalenta.component.SelectField
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="1:1"/>
+                android:layout_weight="1"/>
 
-            <tech.dalenta.component.SearchBar
+            <tech.dalenta.component.SelectField
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:hint="1:1"
                 android:layout_weight="1"/>
 
         </LinearLayout>

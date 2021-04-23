@@ -101,7 +101,7 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
         set(value) { textCaptionView.text = value }
 
     fun setCaptionState(captionState: Int) {
-        textCaptionView.captionState = captionState
+        textCaptionView.setCaptionState(captionState)
         textInputLayout.apply {
             when (captionState) {
                 CaptionState.NEUTRAL -> {

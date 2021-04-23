@@ -15,17 +15,22 @@ class MainActivity : AppCompatActivity() {
 
         /**
          *
+         * Select Field Example
+         * */
+
+        /**
+         *
          * Search Bar Example
          * */
-        val textSearchValue = findViewById<TextView>(R.id.text_search_value)
-        val searchBar = findViewById<SearchBar>(R.id.search_bar)
-
-        // With Watch Text Listener
-        searchBar.watchTextChange(object : WatchTextListener {
-            override fun onTextChanged(value: String, start: Int, before: Int, count: Int) {
-                textSearchValue.text = value
-            }
-        })
+//        val textSearchValue = findViewById<TextView>(R.id.text_search_value)
+//        val searchBar = findViewById<SearchBar>(R.id.search_bar)
+//
+//        // With Watch Text Listener
+//        searchBar.watchTextChange(object : WatchTextListener {
+//            override fun onTextChanged(value: String, start: Int, before: Int, count: Int) {
+//                textSearchValue.text = value
+//            }
+//        })
 
         // With Text Watcher
 //        searchBar.addTextChangedListener(object : TextWatcher {
