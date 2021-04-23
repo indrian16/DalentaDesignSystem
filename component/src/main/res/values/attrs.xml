@@ -146,4 +146,13 @@
         <attr name="caption_state"/>
     </declare-styleable>
 
+    <declare-styleable name="SearchBar">
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <attr name="android:text"/>
+        <attr name="android:textSize"/>
+        <attr name="android:hint"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+
 </resources>

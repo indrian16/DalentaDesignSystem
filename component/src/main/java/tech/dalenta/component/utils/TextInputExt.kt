@@ -1,8 +1,6 @@
 package tech.dalenta.component.utils
 
-import android.R
 import android.content.res.ColorStateList
-import android.graphics.Color
 import android.graphics.drawable.Drawable
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
@@ -24,8 +22,8 @@ fun TextInputLayout.changeBoxBackgroundColor(@ColorRes resId: Int) {
 
 fun TextInputLayout.changeBoxStrokeColorStateList(@ColorRes resId: Int) {
     val states = arrayOf(
-            intArrayOf(R.attr.state_hovered),
-            intArrayOf(-R.attr.state_enabled),
+            intArrayOf(android.R.attr.state_hovered),
+            intArrayOf(-android.R.attr.state_enabled),
             intArrayOf()
     )
 
@@ -39,6 +37,7 @@ fun TextInputLayout.changeBoxStrokeColorStateList(@ColorRes resId: Int) {
     setBoxStrokeColorStateList(ColorStateList(states, colors))
 }
 
-fun TextInputLayout.changeBoxStrokeWidth(size: Int) {
-    boxStrokeWidth = size.dp
+fun TextInputLayout.changeStartIconTintList(@ColorRes resId: Int) {
+
+    setStartIconTintList(ColorStateList.valueOf(ContextCompat.getColor(context, resId)))
 }

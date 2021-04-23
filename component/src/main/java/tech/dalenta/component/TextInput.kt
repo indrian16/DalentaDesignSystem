@@ -25,6 +25,13 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
         // Inflating Layout
         inflate(context, R.layout.text_input_view, this)
 
+        // Bind View
+        parentView = findViewById(R.id.parent_view)
+        textLabel = findViewById(R.id.tv_label)
+        textInputLayout = findViewById(R.id.text_input_layout)
+        textInputEditText = findViewById(R.id.text_input_edit_text)
+        textCaptionView = findViewById(R.id.tv_caption)
+
         // Get Attr
         val attributes = context.obtainStyledAttributes(attrs, R.styleable.TextInput)
 
@@ -35,13 +42,6 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
                 dimensionWidth,
                 dimensionHeight
         )
-
-        // Bind View
-        parentView = findViewById(R.id.parent_view)
-        textLabel = findViewById(R.id.tv_label)
-        textInputLayout = findViewById(R.id.text_input_layout)
-        textInputEditText = findViewById(R.id.text_input_edit_text)
-        textCaptionView = findViewById(R.id.tv_caption)
 
         // Set Attr Text Label
         textLabel.apply {
