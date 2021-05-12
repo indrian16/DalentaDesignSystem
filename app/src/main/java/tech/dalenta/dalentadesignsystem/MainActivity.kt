@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import tech.dalenta.component.SearchBar
+import tech.dalenta.component.SelectField
+import tech.dalenta.component.utils.CaptionState
 import tech.dalenta.component.utils.WatchTextListener
 
 class MainActivity : AppCompatActivity() {
@@ -17,6 +20,12 @@ class MainActivity : AppCompatActivity() {
          *
          * Select Field Example
          * */
+        val selectField = findViewById<SelectField>(R.id.select_field)
+        selectField.setOnClickListener {
+            selectField.setSelectValue("Jakarta")
+            selectField.setCaptionState(CaptionState.SUCCESS)
+            selectField.textCaption = "Berhasil"
+        }
 
         /**
          *

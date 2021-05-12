@@ -77,7 +77,7 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
             }
         }
 
-        // Set Attr
+        // Set Attr Caption
         textCaptionView.apply {
             text = attributes.getString(R.styleable.TextInput_textCaption) ?: "Caption"
         }

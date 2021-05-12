@@ -4,11 +4,19 @@ import android.content.res.ColorStateList
 import android.graphics.drawable.Drawable
 import androidx.annotation.ColorRes
 import androidx.core.content.ContextCompat
+import androidx.core.graphics.drawable.DrawableCompat
 import com.google.android.material.textfield.TextInputLayout
 
-fun TextInputLayout.changeEndIconDrawable(drawable: Drawable?) {
+
+fun TextInputLayout.changeEndIconDrawable(drawable: Drawable?, @ColorRes resId: Int? = null) {
     if (drawable != null) {
-        endIconDrawable = drawable
+        endIconDrawable = if (resId != null) {
+            val wrappedDrawable = DrawableCompat.wrap(drawable)
+            DrawableCompat.setTint(wrappedDrawable, ContextCompat.getColor(context, resId))
+            wrappedDrawable
+        } else {
+            drawable
+        }
     }
 }
 
@@ -38,6 +46,5 @@ fun TextInputLayout.changeBoxStrokeColorStateList(@ColorRes resId: Int) {
 }
 
 fun TextInputLayout.changeStartIconTintList(@ColorRes resId: Int) {
-
     setStartIconTintList(ColorStateList.valueOf(ContextCompat.getColor(context, resId)))
 }

@@ -15,6 +15,8 @@
         <flag name="error" value="3"/>
     </attr>
 
+    <attr name="textCaption" format="string"/>
+
     <declare-styleable name="Button">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
@@ -127,7 +129,7 @@
     <declare-styleable name="TextInput">
         <attr name="textLabel" format="string"/>
         <attr name="textLabelSize" format="dimension"/>
-        <attr name="textCaption" format="string"/>
+        <attr name="textCaption"/>
         <attr name="caption_state"/>
 
         <attr name="endIconDrawable"/>
@@ -145,6 +147,14 @@
     <declare-styleable name="SelectField">
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
+        <attr name="android:textSize"/>
+        <attr name="defaultValue" format="string"/>
+        <attr name="selectValue" format="string"/>
+
+        <attr name="textCaption"/>
+        <attr name="caption_state"/>
+
+        <attr name="endIconDrawable"/>
     </declare-styleable>
 
     <declare-styleable name="TextCaption">
