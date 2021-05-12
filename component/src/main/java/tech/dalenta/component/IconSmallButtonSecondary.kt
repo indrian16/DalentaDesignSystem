@@ -34,7 +34,8 @@ class IconSmallButtonSecondary(context: Context, attrs: AttributeSet?) : FrameLa
             layoutParams = params
 
             // Set Icon attribute
-            icon = attributes.getDrawable(R.styleable.IconSmallButtonSecondary_icon) ?: ContextCompat.getDrawable(context, R.drawable.ic_search)
+            changeIcon(attributes.getDrawable(R.styleable.IconSmallButtonSecondary_icon))
+            changeIconSize(attributes.getDimension(R.styleable.IconSmallButtonSecondary_iconSize, iconSize.toFloat()))
 
             // Set Color State
             when (attributes.getInt(R.styleable.IconSmallButtonSecondary_color_state, ColorState.PRIMARY)) {

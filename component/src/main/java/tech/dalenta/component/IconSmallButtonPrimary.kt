@@ -2,12 +2,11 @@ package tech.dalenta.component
 
 import android.content.Context
 import android.util.AttributeSet
+import android.util.Log
 import android.widget.FrameLayout
 import androidx.core.content.ContextCompat
 import com.google.android.material.button.MaterialButton
-import tech.dalenta.component.utils.ColorState
-import tech.dalenta.component.utils.ViewUtils
-import tech.dalenta.component.utils.changeBackgroundColor
+import tech.dalenta.component.utils.*
 
 class IconSmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton
@@ -36,7 +35,8 @@ class IconSmallButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayo
             layoutParams = params
 
             // Set Icon attribute
-            icon = attributes.getDrawable(R.styleable.IconSmallButtonPrimary_icon) ?: ContextCompat.getDrawable(context, R.drawable.ic_search)
+            changeIcon(attributes.getDrawable(R.styleable.IconSmallButtonPrimary_icon))
+            changeIconSize(attributes.getDimension(R.styleable.IconSmallButtonPrimary_iconSize, iconSize.toFloat()))
 
             // Set Color State
             when (attributes.getInt(R.styleable.IconSmallButtonPrimary_color_state, ColorState.PRIMARY)) {

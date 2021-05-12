@@ -58,6 +58,7 @@
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
         <attr name="icon"/>
+        <attr name="iconSize"/>
         <attr name="color_state"/>
     </declare-styleable>
 
@@ -65,6 +66,7 @@
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
         <attr name="icon"/>
+        <attr name="iconSize"/>
         <attr name="color_state"/>
     </declare-styleable>
 
@@ -72,6 +74,7 @@
         <attr name="android:layout_width"/>
         <attr name="android:layout_height"/>
         <attr name="icon"/>
+        <attr name="iconSize"/>
         <attr name="color_state"/>
     </declare-styleable>
 

@@ -34,7 +34,8 @@ class IconSmallButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLay
             layoutParams = params
 
             // Set Icon attribute
-            icon = attributes.getDrawable(R.styleable.IconSmallButtonOutlined_icon) ?: ContextCompat.getDrawable(context, R.drawable.ic_search)
+            changeIcon(attributes.getDrawable(R.styleable.IconSmallButtonOutlined_icon))
+            changeIconSize(attributes.getDimension(R.styleable.IconSmallButtonOutlined_iconSize, iconSize.toFloat()))
 
             // Set Color State
             when (attributes.getInt(R.styleable.IconSmallButtonOutlined_color_state, ColorState.PRIMARY)) {
