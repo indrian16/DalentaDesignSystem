@@ -1,15 +1,9 @@
 package tech.dalenta.dalentadesignsystem
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import tech.dalenta.component.SearchBar
 import tech.dalenta.component.SelectField
 import tech.dalenta.component.utils.CaptionState
-import tech.dalenta.component.utils.WatchTextListener
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

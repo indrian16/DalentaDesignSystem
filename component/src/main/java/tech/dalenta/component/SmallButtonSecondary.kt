@@ -9,7 +9,6 @@ import tech.dalenta.component.utils.*
 
 class SmallButtonSecondary(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton
-    var parentView: FrameLayout
 
     init {
 
@@ -69,13 +68,6 @@ class SmallButtonSecondary(context: Context, attrs: AttributeSet?) : FrameLayout
                     changeIconColor(R.color.red_3)
                 }
             }
-        }
-
-        // Set Dimension Parent View
-        parentView = findViewById(R.id.parent_view)
-        parentView.apply {
-            layoutParams.width = dimensionWidth
-            layoutParams.height = dimensionHeight
         }
 
         attributes.recycle()

@@ -10,7 +10,6 @@ import tech.dalenta.component.utils.*
 class LargeButtonSecondary(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
 
     var button: MaterialButton
-    var parentView: FrameLayout
 
     init {
 
@@ -70,13 +69,6 @@ class LargeButtonSecondary(context: Context, attrs: AttributeSet?) : FrameLayout
                     changeIconColor(R.color.red_3)
                 }
             }
-        }
-
-        // Set Dimension Parent View
-        parentView = findViewById(R.id.parent_view)
-        parentView.apply {
-            layoutParams.width = LayoutParams.MATCH_PARENT
-            layoutParams.height = LayoutParams.MATCH_PARENT
         }
 
         attributes.recycle()

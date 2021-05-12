@@ -11,7 +11,6 @@ import tech.dalenta.component.utils.changeBackgroundColor
 
 class LargeButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton
-    var parentView: FrameLayout
 
     init {
 
@@ -59,12 +58,6 @@ class LargeButtonPrimary(context: Context, attrs: AttributeSet?) : FrameLayout(c
                     changeBackgroundColor(R.color.red_3)
                 }
             }
-        }
-
-        parentView = findViewById(R.id.parent_view)
-        parentView.apply {
-            layoutParams.width = dimensionWidth
-            layoutParams.height = dimensionHeight
         }
 
         attributes.recycle()

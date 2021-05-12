@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.button.MaterialButton android:id="@+id/button"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:theme="@style/Theme.DalentaDesignSystem.DarkActionBar"
-    android:id="@+id/parent_view">
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="54dp"
-        android:paddingRight="54dp"
-        android:paddingTop="12dp"
-        android:paddingBottom="12dp"
-        android:textAppearance="@style/TextAppearance.DalentaDesignSystem.Button"
-        android:text="Button"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        app:cornerRadius="10dp"
-        app:elevation="0dp"
-        app:iconSize="18dp"
-        />
-
-</FrameLayout>
+    android:paddingLeft="54dp"
+    android:paddingRight="54dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp"
+    android:textAppearance="@style/TextAppearance.DalentaDesignSystem.Button"
+    android:text="Button"
+    android:textAllCaps="false"
+    android:textSize="16sp"
+    app:cornerRadius="10dp"
+    app:elevation="0dp"
+    app:iconSize="18dp"
+    android:theme="@style/Theme.DalentaDesignSystem.NoActionBar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" />

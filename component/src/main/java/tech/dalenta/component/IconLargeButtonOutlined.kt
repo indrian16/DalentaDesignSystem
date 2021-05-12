@@ -9,7 +9,6 @@ import tech.dalenta.component.utils.*
 
 class IconLargeButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
     var button: MaterialButton
-    var parentView: FrameLayout
 
     init {
 
@@ -60,13 +59,6 @@ class IconLargeButtonOutlined(context: Context, attrs: AttributeSet?) : FrameLay
                     changeRippleColor(R.color.red_4)
                 }
             }
-        }
-
-        // Set Dimension Parent View
-        parentView = findViewById(R.id.parent_view)
-        parentView.apply {
-            layoutParams.width = dimensionWidth
-            layoutParams.height = dimensionHeight
         }
 
         attributes.recycle()

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+
+    <tech.dalenta.component.SelectField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultValue="Pilih Kota"
+        app:endIconDrawable="@drawable/ic_search"/>
+
+    <tech.dalenta.component.SelectField
+        android:id="@+id/select_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:defaultValue="Pilih Kota"
+        app:endIconDrawable="@drawable/ic_search"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <tech.dalenta.component.SelectField
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:defaultValue="1:1"/>
+
+        <tech.dalenta.component.SelectField
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:defaultValue="1:1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
