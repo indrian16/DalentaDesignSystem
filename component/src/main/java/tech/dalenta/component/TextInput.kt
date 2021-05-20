@@ -100,7 +100,10 @@ class TextInput(context: Context, attrs: AttributeSet?) : FrameLayout(context, a
         get() = textCaptionView.text.toString()
         set(value) { textCaptionView.text = value }
 
-    fun setCaptionState(captionState: Int) {
+    fun setCaptionState(captionState: Int, textCaption: String = "") {
+        if (textCaption.isNotEmpty()) {
+            textCaptionView.text = textCaption
+        }
         textCaptionView.setCaptionState(captionState)
         textInputLayout.apply {
             when (captionState) {
