@@ -22,12 +22,15 @@ class MainActivity : AppCompatActivity() {
          * */
         val selectField = findViewById<SelectField>(R.id.select_field)
         selectField.setOnClickListener {
-            selectField.selectValue = "Jakarta"
 
             selectField.setCaptionState(CaptionState.SUCCESS)
             selectField.textCaption = "Berhasil"
 
             // Test Read Label
+            selectField.selectValue = null
+            Toast.makeText(it.context, "Read SelectValue: ${selectField.selectValue}", Toast.LENGTH_SHORT).show()
+
+            selectField.selectValue = "Jakarta"
             Toast.makeText(it.context, "Read SelectValue: ${selectField.selectValue}", Toast.LENGTH_SHORT).show()
         }
 

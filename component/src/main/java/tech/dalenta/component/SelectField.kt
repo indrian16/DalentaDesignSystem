@@ -78,8 +78,7 @@ class SelectField(context: Context, attrs: AttributeSet?) : FrameLayout(context,
         attributes.recycle()
     }
 
-    var selectValue: String?
-        get() = textInputEditText.text.toString()
+    var selectValue: String? = ""
         set(value) {
             textInputEditText.apply {
                 if (value.isNullOrEmpty()) {
@@ -90,6 +89,8 @@ class SelectField(context: Context, attrs: AttributeSet?) : FrameLayout(context,
                     setText(value)
                 }
             }
+
+            field = value
         }
 
     var textCaption: String
