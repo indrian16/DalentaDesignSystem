@@ -5,6 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.util.Patterns
 import androidx.appcompat.app.AppCompatActivity
+import tech.dalenta.component.LargeButtonPrimary
 import tech.dalenta.component.SelectField
 import tech.dalenta.component.TextInput
 import tech.dalenta.component.utils.CaptionState
@@ -55,6 +56,7 @@ class MainActivity : AppCompatActivity() {
          *
          * Login Example
          * */
+        val buttonLogin = findViewById<LargeButtonPrimary>(R.id.btn_login)
         val textInputEmail = findViewById<TextInput>(R.id.text_input_email)
         textInputEmail.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
@@ -63,9 +65,11 @@ class MainActivity : AppCompatActivity() {
                 if (!Patterns.EMAIL_ADDRESS.matcher(s.toString()).matches()) {
                     textInputEmail.setCaptionState(CaptionState.ERROR)
                     textInputEmail.textCaption = "Tulis Email yang benar"
+                    buttonLogin.isEnabled = false
                 } else {
                     textInputEmail.setCaptionState(CaptionState.SUCCESS)
                     textInputEmail.textCaption = "Goodjob"
+                    buttonLogin.isEnabled = true
                 }
             }
         })

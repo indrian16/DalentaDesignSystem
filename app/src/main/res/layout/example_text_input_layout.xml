@@ -43,9 +43,12 @@
         />
 
     <tech.dalenta.component.LargeButtonPrimary
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Daftar"/>
+        android:text="Daftar"
+        android:enabled="false"
+        app:color_state="red"/>
 
 </LinearLayout>
