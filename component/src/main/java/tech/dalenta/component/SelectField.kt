@@ -1,13 +1,11 @@
 package tech.dalenta.component
 
 import android.content.Context
-import android.content.res.ColorStateList
 import android.util.AttributeSet
 import android.util.TypedValue
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
 import tech.dalenta.component.utils.*
@@ -48,6 +46,12 @@ class SelectField(context: Context, attrs: AttributeSet?) : FrameLayout(context,
         // Set Dimension
         parentView.layoutParams = params
 
+        // Set Attr Text Label
+        textLabel.apply {
+            text = attributes.getString(R.styleable.SelectField_textLabel) ?: "Text Field Label"
+            setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.SelectField_textLabelSize, textLabel.textSize))
+        }
+
         // Set Attr Text Input Layout
         textInputLayout.apply {
             changeEndIconDrawable(attributes.getDrawable(R.styleable.SelectField_endIconDrawable), R.color.blue_3)
@@ -56,8 +60,8 @@ class SelectField(context: Context, attrs: AttributeSet?) : FrameLayout(context,
         // Set Attr Edit Text
         textInputEditText.apply {
             defaultValue = attributes.getString(R.styleable.SelectField_defaultValue) ?: defaultValue
-            val selectValue: String? = attributes.getString(R.styleable.SelectField_selectValue)
-            setSelectValue(selectValue)
+            val selectValueAttr: String? = attributes.getString(R.styleable.SelectField_selectValue)
+            selectValue = selectValueAttr
 
             setTextSize(TypedValue.COMPLEX_UNIT_PX, attributes.getDimension(R.styleable.SelectField_android_textSize, textInputEditText.textSize))
         }
@@ -74,17 +78,19 @@ class SelectField(context: Context, attrs: AttributeSet?) : FrameLayout(context,
         attributes.recycle()
     }
 
-    fun setSelectValue(value: String?) {
-        textInputEditText.apply {
-            if (value.isNullOrEmpty()) {
-                changeTextColor(R.color.blue_3)
-                setText(defaultValue)
-            } else {
-                changeTextColor(R.color.dark)
-                setText(value)
+    var selectValue: String?
+        get() = textInputEditText.text.toString()
+        set(value) {
+            textInputEditText.apply {
+                if (value.isNullOrEmpty()) {
+                    changeTextColor(R.color.blue_3)
+                    setText(defaultValue)
+                } else {
+                    changeTextColor(R.color.dark)
+                    setText(value)
+                }
             }
         }
-    }
 
     var textCaption: String
         get() = textCaptionView.text.toString()

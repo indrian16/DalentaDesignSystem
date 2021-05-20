@@ -8,6 +8,6 @@
     android:orientation="vertical">
 
     <include
-        layout="@layout/example_text_input_layout"/>
+        layout="@layout/example_select_field"/>
 
 </ScrollView>

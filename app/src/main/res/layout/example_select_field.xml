@@ -11,6 +11,8 @@
     <tech.dalenta.component.SelectField
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:textLabel="Test Label"
+        app:textLabelSize="18sp"
         app:defaultValue="Pilih Kota"
         app:endIconDrawable="@drawable/ic_search"/>
 
@@ -18,6 +20,7 @@
         android:id="@+id/select_field"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:textLabel="Bisa di klik"
         app:defaultValue="Pilih Kota"
         app:endIconDrawable="@drawable/ic_search"/>
 
@@ -30,12 +33,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:textLabel="Test Banding 1:1"
             app:defaultValue="1:1"/>
 
         <tech.dalenta.component.SelectField
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            app:textLabel="Test Banding 1:1"
             app:defaultValue="1:1"/>
 
     </LinearLayout>

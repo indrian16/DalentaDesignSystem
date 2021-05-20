@@ -15,6 +15,8 @@
         <flag name="error" value="3"/>
     </attr>
 
+    <attr name="textLabel" format="string"/>
+    <attr name="textLabelSize" format="dimension"/>
     <attr name="textCaption" format="string"/>
 
     <declare-styleable name="Button">
@@ -131,8 +133,8 @@
     </declare-styleable>
 
     <declare-styleable name="TextInput">
-        <attr name="textLabel" format="string"/>
-        <attr name="textLabelSize" format="dimension"/>
+        <attr name="textLabel"/>
+        <attr name="textLabelSize"/>
         <attr name="textCaption"/>
         <attr name="caption_state"/>
 
@@ -155,6 +157,8 @@
         <attr name="defaultValue" format="string"/>
         <attr name="selectValue" format="string"/>
 
+        <attr name="textLabel"/>
+        <attr name="textLabelSize"/>
         <attr name="textCaption"/>
         <attr name="caption_state"/>
 
