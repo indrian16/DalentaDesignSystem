@@ -9,6 +9,7 @@ import android.widget.NumberPicker
 import tech.dalenta.component.utils.ViewUtils
 import tech.dalenta.component.utils.dp
 import tech.dalenta.component.utils.setDividerHeight
+import java.time.LocalDateTime
 
 class DatePicker(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
 
@@ -16,6 +17,10 @@ class DatePicker(context: Context, attrs: AttributeSet?) : FrameLayout(context, 
     var pickerDay: NumberPicker
     var pickerMonth: NumberPicker
     var pickerYear: NumberPicker
+
+    private var startDate = LocalDateTime.now()
+    private var endDate = LocalDateTime.now().plusDays(1)
+    private var currentDate = startDate
 
     init {
 
@@ -50,9 +55,97 @@ class DatePicker(context: Context, attrs: AttributeSet?) : FrameLayout(context, 
             pickerYear.setDividerHeight(1.dp)
         }
 
+        // Update Display
+        updateDisplayDay()
+        updateDisplayMonths()
+        updateDisplayYear()
+
         // Set Dimension
         parentView.layoutParams = params
 
         attributes.recycle()
     }
+
+    private fun updateDisplayDay() {
+        pickerDay.apply {
+            displayedValues = null
+            minValue = 0
+            maxValue = 0
+            value = currentDate.dayOfMonth
+        }
+        pickerDay.apply {
+            displayedValues = getDays()
+            minValue = 1
+            maxValue = currentDate.toLocalDate().lengthOfMonth()
+            value = currentDate.dayOfMonth
+        }
+    }
+
+    private fun updateDisplayMonths() {
+        pickerMonth.apply {
+            displayedValues = null
+            minValue = 0
+            maxValue = 0
+            value = currentDate.monthValue
+        }
+        pickerMonth.apply {
+            displayedValues = getMonths()
+            minValue = 1
+            maxValue = 12
+            value = currentDate.monthValue
+        }
+    }
+
+    private fun updateDisplayYear() {
+        pickerYear.apply {
+            displayedValues = null
+            minValue = 0
+            maxValue = 0
+            value = currentDate.year
+        }
+        pickerYear.apply {
+            displayedValues = getYears()
+            minValue = 1999
+            maxValue = LocalDateTime.now().year
+            value = currentDate.year
+        }
+    }
+
+
+    private fun getDays(): Array<String> {
+        val min = 1
+        val max = currentDate.month.maxLength()
+
+        val days = arrayListOf<String>()
+
+        for (day in min..max) {
+            days.add(
+                if (day < 10) {
+                    "0$day"
+                } else {
+                    day.toString()
+                }
+            )
+        }
+
+        return days.toTypedArray()
+    }
+
+    private fun getMonths(): Array<String> {
+        return arrayOf("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember")
+    }
+
+    private fun getYears(): Array<String> {
+        val min = 1999
+        val max = LocalDateTime.now().year
+
+        val years = arrayListOf<String>()
+
+        for (year in min..max) {
+            years.add(year.toString())
+        }
+
+        return years.toTypedArray()
+    }
+
 }
