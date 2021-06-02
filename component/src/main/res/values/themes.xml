@@ -33,6 +33,12 @@
         <item name="backgroundTint">@color/color_state_button</item>
     </style>
 
+    <style name="Widget.DalentaDesignSystem.NumberPicker" parent="Theme.DalentaDesignSystem.NoActionBar">
+        <item name="colorControlNormal">@color/blue_3</item>
+        <item name="fontFamily">@font/work_sans</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
     <style name="Widget.DalentaDesignSystem.Primary.IconOnly" parent="Widget.MaterialComponents.Button">
         <item name="iconPadding">0dp</item>
         <item name="android:insetTop">0dp</item>
