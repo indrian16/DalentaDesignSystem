@@ -19,7 +19,7 @@ Add this to your app module's `build.gradle` file:
 
 ```gradle
 dependencies {
-  implementation 'com.github.indrian16:DalentaDesignSystem:0.0.7-alpha'
+  implementation 'com.github.indrian16:DalentaDesignSystem:0.0.9-alpha'
 }
 ```
 
