@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.widget.FrameLayout
 import android.widget.LinearLayout
 import android.widget.NumberPicker
+import tech.dalenta.component.listener.DatePickerListener
 import tech.dalenta.component.utils.ViewUtils
 import tech.dalenta.component.utils.dp
 import tech.dalenta.component.utils.setDividerHeight
@@ -18,9 +19,8 @@ class DatePicker(context: Context, attrs: AttributeSet?) : FrameLayout(context, 
     var pickerMonth: NumberPicker
     var pickerYear: NumberPicker
 
-    private var startDate = LocalDateTime.now()
-    private var endDate = LocalDateTime.now().plusDays(1)
-    private var currentDate = startDate
+    private var datePickerListener: DatePickerListener? = null
+    private var currentDate = LocalDateTime.now()
 
     init {
 
@@ -60,10 +60,49 @@ class DatePicker(context: Context, attrs: AttributeSet?) : FrameLayout(context, 
         updateDisplayMonths()
         updateDisplayYear()
 
+        // Set Listener
+        pickerDay.setOnValueChangedListener { picker, _, _ ->
+
+            val newDate = try {
+                currentDate.withDayOfMonth(picker.value)
+            } catch (e: Exception) {
+                e.printStackTrace()
+                currentDate.withDayOfMonth(currentDate.month.maxLength())
+            }
+
+            currentDate = newDate
+
+            updateDisplayMonths()
+            updateDisplayYear()
+            datePickerListener?.onUpdateDate(currentDate)
+        }
+
+        pickerMonth.setOnValueChangedListener { picker, _, _ ->
+
+            currentDate = currentDate.withMonth(picker.value)
+
+            updateDisplayDay()
+            updateDisplayYear()
+            datePickerListener?.onUpdateDate(currentDate)
+        }
+
+        pickerYear.setOnValueChangedListener { picker, _, _ ->
+
+            currentDate = currentDate.withYear(picker.value)
+
+            updateDisplayDay()
+            updateDisplayMonths()
+            datePickerListener?.onUpdateDate(currentDate)
+        }
+
         // Set Dimension
         parentView.layoutParams = params
 
         attributes.recycle()
+    }
+
+    fun setDatePickerListener(datePickerListener: DatePickerListener) {
+        this.datePickerListener = datePickerListener
     }
 
     private fun updateDisplayDay() {

@@ -1,20 +1,27 @@
 package tech.dalenta.dalentadesignsystem
 
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.util.Patterns
-import android.widget.Toast
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import tech.dalenta.component.LargeButtonPrimary
+import tech.dalenta.component.DatePicker
 import tech.dalenta.component.SelectField
-import tech.dalenta.component.TextInput
-import tech.dalenta.component.utils.CaptionState
+import tech.dalenta.component.listener.DatePickerListener
+import tech.dalenta.component.utils.display
+import java.time.LocalDateTime
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val datePicker = findViewById<DatePicker>(R.id.date_picker)
+        val selectFieldStart = findViewById<SelectField>(R.id.select_field_start)
+        datePicker.setDatePickerListener(object : DatePickerListener {
+            override fun onUpdateDate(currentDate: LocalDateTime) {
+                Log.d("Main", currentDate.toString())
+                selectFieldStart.selectValue = currentDate.display()
+            }
+        })
 
         /**
          *

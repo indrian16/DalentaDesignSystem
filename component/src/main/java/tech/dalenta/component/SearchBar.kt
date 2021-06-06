@@ -9,6 +9,7 @@ import android.view.inputmethod.EditorInfo
 import android.widget.FrameLayout
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import tech.dalenta.component.listener.WatchTextListener
 import tech.dalenta.component.utils.*
 
 class SearchBar(context: Context, attrs: AttributeSet?) : FrameLayout(context, attrs) {
